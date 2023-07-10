@@ -1,4 +1,4 @@
-import Form from './Form';
+import Form from './FormComponents/Form';
 
 function App() {
   return (
