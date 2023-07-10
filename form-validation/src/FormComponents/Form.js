@@ -11,6 +11,7 @@ function Form() {
 		
 		if (inputFieldValue.length > 8) {
 			document.querySelector("#eightcharacters").setAttribute("checked", "true");
+			document.querySelector("#SRAnnouncementRegion > p").innerText = "Password requirement of minimum character limit satisfied";
 		}
 		else {
 			document.querySelector("#eightcharacters").removeAttribute("checked", "false");
@@ -18,6 +19,7 @@ function Form() {
 		
 		if (/[!@#$%^&*]/.test(inputFieldValue) == true) {
 			document.querySelector("#onesymbol").setAttribute("checked", "true");
+			document.querySelector("#SRAnnouncementRegion > p").innerText = "Password requirement of 'At least 1 symbol' satisfied";
 		}
 		else {
 			document.querySelector("#onesymbol").removeAttribute("checked", "false");
@@ -25,6 +27,7 @@ function Form() {
 		
 		if (/\d/.test(inputFieldValue) == true) {
 			document.querySelector("#onenumber").setAttribute("checked", "true");
+			document.querySelector("#SRAnnouncementRegion > p").innerText = "Password requirement for 'At least 1 number' satisfied";
 		}
 		else {
 			document.querySelector("#onenumber").removeAttribute("checked", "false");
@@ -32,9 +35,15 @@ function Form() {
 
 		if (/[A-Z]/.test(inputFieldValue) == true) {
 			document.querySelector("#onecapitalletter").setAttribute("checked", "true");
+			document.querySelector("#SRAnnouncementRegion > p").innerText = "Password requirement for 'At least 1 capital letter' satisfied";
 		}
 		else {
 			document.querySelector("#onecapitalletter").removeAttribute("checked", "false");
+		}
+		
+		//If all requirements are meet
+		if (document.querySelectorAll("input[type='checkbox'][checked]").length == 4) {
+			document.querySelector("#SRAnnouncementRegion > p").innerText = "All password requirements are satisfied";
 		}
 	};
 
