@@ -1,4 +1,4 @@
-import './App.css';
+import './ScreenReaderAnnouncementRegion.css';
 
 function ScreenReaderAnnouncementRegion() {
 	return (

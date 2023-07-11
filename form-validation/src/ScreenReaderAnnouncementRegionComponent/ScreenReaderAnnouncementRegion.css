@@ -1,0 +1,5 @@
+div[role="region"][aria-label="Announcement Region for Screen Readers"] {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}

@@ -1,6 +1,6 @@
-import List from './List';
+import List from './ListComponent/List';
 import Form from './FormComponents/Form';
-import ScreenReaderAnnouncementRegion from './ScreenReaderAnnouncementRegion';
+import ScreenReaderAnnouncementRegion from './ScreenReaderAnnouncementRegionComponent/ScreenReaderAnnouncementRegion';
 
 function App() {
 	return (
