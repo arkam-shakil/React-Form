@@ -1,6 +1,6 @@
 import React from 'react';
-import InputField from './InputField';
-import CheckBox from './CheckBox';
+import InputField from './../InputFieldComponent/InputField';
+import CheckBox from './../CheckBoxComponent/CheckBox';
 
 function Form() {
 	const passwordRequirements = ["8 characters", "At least 1 symbol", "1 number", "1 capital letter"];
